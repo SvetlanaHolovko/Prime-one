@@ -884,14 +884,33 @@ header {
 .contacts-content__column {
   flex: 0 0 50%;
 }
-.contacts-content__map {
-  height: 100%;
-}
 @media (max-width: 47.99875em) {
-  .contacts-content__map {
-    height: 300px;
+  .contacts-content__column {
+    flex: 0 0 100%;
   }
 }
+.contacts-content__map {
+  height: 100%;
+  margin-bottom: -2px;
+}
+@media (max-width: 1100px) {
+  .contacts-content__map iframe {
+    max-width: 500px;
+  }
+}
+@media (max-width: 61.99875em) {
+  .contacts-content__map iframe {
+    max-width: 450px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .contacts-content__map iframe {
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .contacts-content-form {
   padding: 55px 60px;
 }
